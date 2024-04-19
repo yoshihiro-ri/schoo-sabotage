@@ -52,9 +52,9 @@ start_time = time.time()
 
 while True:
     actions.move_to_element(driver.find_element(By.CLASS_NAME,"complex-box")).perform()
-    actions.move_by_offset(300,300)
+    actions.move_by_offset(50,50)
     time.sleep(random.randrange(30,40))
-    actions.move_by_offset(-300,-300)
+    actions.move_by_offset(-50,-50)
     time.sleep(random.randrange(30,40))
     actions.click(driver.find_element(By.CLASS_NAME,"js-sleepIcon")).perform()
     if time.time() == start_time + int(perform_time_sec):
